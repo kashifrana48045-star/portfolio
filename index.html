@@ -5,50 +5,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kashif Riaz | Portfolio</title>
 <style>
-:root{--bg:#fffaf0;--card:#fff;--text:#1f1b0e;--muted:#6b6451;--y:#f5b800;--y2:#fff1bf;--ink:#1f1b0e;--line:#efe3b8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+:root{--bg:#D6D6D6;--card:#F2C4CE;--text:#2C2B30;--muted:#4F4F51;--accent:#F58F7C;--soft:#F2C4CE;--ink:#2C2B30;--line:#4F4F51;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14120a;--card:#1d1a0e;--text:#f6f1de;--muted:#b3aa8c;--y2:#3a3010;--line:#322a0f;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#14120a;--card:#1d1a0e;--text:#f6f1de;--muted:#b3aa8c;--y2:#3a3010;--line:#322a0f;color-scheme:dark}
 *{box-sizing:border-box}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
 .wrap{max-width:960px;margin:0 auto;padding:0 20px}
-nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--y);z-index:5}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--y);z-index:10}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--accent);z-index:5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--accent);z-index:10}
 nav .wrap{display:flex;gap:6px;align-items:center;overflow-x:auto;padding-top:8px;padding-bottom:8px}
 nav b{color:var(--ink);margin-right:auto;font-size:18px}
 nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:14px;padding:7px 14px;border-radius:99px;white-space:nowrap}
-nav a.on,nav a:hover{background:var(--ink);color:var(--y)}
+nav a.on,nav a:hover{background:var(--ink);color:var(--accent)}
 .page{display:none;padding:48px 0 60px}
 .page.on{display:block}
 h1{font-size:clamp(32px,6vw,50px);line-height:1.15;margin:10px 0}
 h2{font-size:28px;margin:0 0 6px}
-h2::after{content:"";display:block;width:56px;height:5px;background:var(--y);border-radius:9px;margin-top:8px}
-.tag{display:inline-block;background:var(--y);color:var(--ink);padding:4px 12px;border-radius:99px;font-size:13px;font-weight:700}
+h2::after{content:"";display:block;width:56px;height:5px;background:var(--accent);border-radius:9px;margin-top:8px}
+.tag{display:inline-block;background:var(--accent);color:var(--ink);padding:4px 12px;border-radius:99px;font-size:13px;font-weight:700}
 .hero{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center}
 @media(max-width:700px){.hero{grid-template-columns:1fr}.hero .ph{order:-1;max-width:260px}}
-.ph img{width:100%;border-radius:22px;border:5px solid var(--y);display:block;box-shadow:12px 12px 0 var(--y2)}
+.ph img{width:100%;border-radius:22px;border:5px solid var(--accent);display:block;box-shadow:12px 12px 0 var(--soft)}
 .lead{color:var(--muted);font-size:18px}
 .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
-.btn{padding:11px 20px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;border:2px solid var(--y);color:var(--text)}
-.btn.p{background:var(--y);color:var(--ink)}
+.btn{padding:11px 20px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;border:2px solid var(--accent);color:var(--text)}
+.btn.p{background:var(--accent);color:var(--ink)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:22px}
-.card{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--y);border-radius:14px;padding:20px}
+.card{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:14px;padding:20px}
 .card h3{margin:0 0 6px;font-size:18px}
 .card p{margin:0;color:var(--muted);font-size:15px}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-top:26px}
-.stat{background:var(--y);color:var(--ink);border-radius:14px;padding:14px;text-align:center}
+.stat{background:var(--accent);color:var(--ink);border-radius:14px;padding:14px;text-align:center}
 .stat b{display:block;font-size:24px}.stat span{font-size:12px;font-weight:600}
 .bar{margin-bottom:14px}
 .bar .l{display:flex;justify-content:space-between;font-size:14px;margin-bottom:5px;font-weight:600}
-.bar .t{height:9px;background:var(--y2);border-radius:99px;overflow:hidden}
-.bar .f{height:100%;background:var(--y);border-radius:99px}
+.bar .t{height:9px;background:var(--soft);border-radius:99px;overflow:hidden}
+.bar .f{height:100%;background:var(--accent);border-radius:99px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
-.chip{background:var(--y2);color:var(--text);padding:3px 10px;border-radius:99px;font-size:12px;font-weight:700}
-.tl{border-left:3px solid var(--y);padding-left:20px;margin-top:22px}
+.chip{background:var(--soft);color:var(--text);padding:3px 10px;border-radius:99px;font-size:12px;font-weight:700}
+.tl{border-left:3px solid var(--accent);padding-left:20px;margin-top:22px}
 .tl .it{margin-bottom:20px;position:relative}
-.tl .it::before{content:"";position:absolute;left:-30px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--y)}
+.tl .it::before{content:"";position:absolute;left:-30px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
 .tl small{color:var(--muted)}
-footer{background:var(--ink);color:var(--y);text-align:center;padding:22px;font-size:14px}
+footer{background:var(--ink);color:var(--accent);text-align:center;padding:22px;font-size:14px}
 </style>
 </head>
 <body>
@@ -65,7 +64,6 @@ footer{background:var(--ink);color:var(--y);text-align:center;padding:22px;font-
 <div class="stats">
 <div class="stat"><b>3.21</b><span>CGPA (approx.)</span></div>
 <div class="stat"><b>5+</b><span>Languages &amp; tools</span></div>
-<div class="stat"><b>CR</b><span>Class Representative</span></div>
 <div class="stat"><b>Final Year</b><span>BS Mathematics</span></div>
 </div></div></section>
 
@@ -75,7 +73,6 @@ footer{background:var(--ink);color:var(--y);text-align:center;padding:22px;font-
 <div class="tl">
 <div class="it"><b>BS Mathematics</b><br><small>7th semester, final-year stage</small><p>Optimization, Simplex and Two-Phase methods, Game Theory, Cryptography, Machine Learning and Generative AI.</p></div>
 <div class="it"><b>Textile / Fabric Mill Experience</b><br><small>Internship / work exposure</small><p>Production, wastage, loom downtime and inventory topics in a real industrial setting.</p></div>
-<div class="it"><b>Class Representative</b><br><small>Leadership</small><p>Class communication, announcements and coordination between students and teachers.</p></div>
 </div>
 <div class="grid">
 <div class="card"><h3>Career Goal</h3><p>Data Analyst or Python/Java developer, growing into AI and Data Science.</p></div>
